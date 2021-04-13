@@ -3,7 +3,6 @@ var _ = require('lodash')
 var errorHandler = require('./../helpers/dbErrorHandler')
 var formidable = require('formidable')
 var fs = require('fs')
-// var profileImage = require('./../../client/assets/images/profile-pic.png')
 
 const create = (req, res, next) => {
   let form = new formidable.IncomingForm()
@@ -50,11 +49,9 @@ const photo = (req, res, next) => {
   next()
 }
 
-/*
 const defaultPhoto = (req, res) => {
-  return res.sendFile(process.cwd()+profileImage)
+  return res.sendFile(process.cwd() + '../assets/images/profile-pic.png')
 }
-*/
 
 const read = (req, res) => {
   req.product.image = undefined
@@ -195,7 +192,7 @@ module.exports = {
   create,
   productByID,
   photo,
-  // defaultPhoto,
+  defaultPhoto,
   read,
   update,
   remove,

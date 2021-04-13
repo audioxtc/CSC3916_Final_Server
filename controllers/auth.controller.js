@@ -28,7 +28,7 @@ const signin = (req, res) => {
     })
     return res.status(200).json({
       token,
-      user: {_id: user._id, name: user.name, email: user.email, seller: user.seller}
+      user: {_id: user._id, name: user.name, email: user.email, created: user.created }
     })
 
   })

@@ -4,6 +4,7 @@
     npm install
     
 ### Ensure .env secrets are configured
+    config/config.js
 
 ### Run server
-    npm -r dotenv/config server.js
+    node -r dotenv/config server.js

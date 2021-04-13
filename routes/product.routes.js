@@ -24,12 +24,11 @@ router.route('/api/products')
 router.route('/api/products/:productId')
   .get(productCtrl.read)
 
-/*
 router.route('/api/product/image/:productId')
   .get(productCtrl.photo, productCtrl.defaultPhoto)
+
 router.route('/api/product/defaultphoto')
   .get(productCtrl.defaultPhoto)
-*/
 
 router.route('/api/product/:shopId/:productId')
   .put(authCtrl.requireSignin, shopCtrl.isOwner, productCtrl.update)

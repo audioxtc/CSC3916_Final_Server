@@ -1,6 +1,6 @@
-var config = require('./config/config');
 var app = require('./express');
 var mongoose = require('mongoose');
+var config = require('./config/config');
 
 // Connection URL
 mongoose.connect(config.mongoUri, { autoIndex: false });
