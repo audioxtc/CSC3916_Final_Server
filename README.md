@@ -3,7 +3,7 @@
 ### Install dependancies
     npm install
     
-### Ensure .env secrets are configured
+### Ensure .env secrets are configured for database
     config/config.js
 
 ### Run server
