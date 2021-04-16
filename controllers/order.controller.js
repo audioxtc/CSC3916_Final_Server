@@ -1,5 +1,5 @@
-var CartItem = require('../models/Order.model')
-var Order = require('../models/Order.model')
+var CartItem = require('../models/order.model')
+var Order = require('../models/order.model')
 var _ = require('lodash')
 var errorHandler = require('./../helpers/dbErrorHandler')
 
